@@ -15,17 +15,18 @@ const WhatsAppButton = () => {
             style = {{
                 backgroundColor : "#4b733e",
                 color: "white",
-                padding: "10px 20px",
-                //buttonsize
-                fontSize: "1rem",
-                width: "80%",
-                height: "50px",
-                maxWidth: "300px",
-                margin: "10px auto",
-                
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer"
+                width: "20vw", 
+                height: "10vw",
+                maxWidth: "200px",
+                maxHeight: "100px",
+                minWidth: "80px",
+                minHeight: "40px",
+                fontSize: "calc(1rem + 0.5vw)",
+                border:"none",
+                borderRadius: "10%",
+                cursor: "pointer",
+
+
             }}
             >
                 Enviar mensaje por WhatsApp
