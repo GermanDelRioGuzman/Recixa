@@ -21,7 +21,7 @@ const WhatsAppButton = () => {
                 maxHeight: "100px",
                 minWidth: "80px",
                 minHeight: "40px",
-                fontSize: "calc(1rem + 0.5vw)",
+                fontSize: "calc(0.4rem + 0.5vw)",
                 border:"none",
                 borderRadius: "10%",
                 cursor: "pointer",
