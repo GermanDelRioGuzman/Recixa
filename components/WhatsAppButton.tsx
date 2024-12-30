@@ -14,14 +14,15 @@ const WhatsAppButton = () => {
             onClick={handleWhatsAppClick}
             style = {{
                 backgroundColor : "#4b733e",
-                position:"fixed",
-                bottom: "330px",
-                right: "495px",
                 color: "white",
                 padding: "10px 20px",
-                fontSize: "12px",
-                width: "200px",
+                //buttonsize
+                fontSize: "1rem",
+                width: "80%",
                 height: "50px",
+                maxWidth: "300px",
+                margin: "10px auto",
+                
                 border: "none",
                 borderRadius: "5px",
                 cursor: "pointer"
