@@ -1,6 +1,7 @@
 import React, {useRef,useState} from "react";
 import { Dimensions,ScrollView, View,Alert, StyleSheet, ImageBackground, StatusBar, TouchableOpacity, TextInput } from "react-native";
-import ResponsiveButton  from "./ResponsiveButton";
+import WhatsAppButton from "../components/WhatsAppButton";
+
 
 const Pages = () => {
 
@@ -90,8 +91,7 @@ const Pages = () => {
                 style={[styles.background, {width, height}]}
                 resizeMode="contain" // Ajusta la imagen para que no se distorsione
               >
-                <ResponsiveButton title="Numero telefonico" onPress ={() => Alert.alert('button pressed')}/>           
-                <ResponsiveButton title="Mensaje" onPress ={() => Alert.alert('button pressed')}/>           
+                <WhatsAppButton></WhatsAppButton>
           </ImageBackground>
         
         </View>
