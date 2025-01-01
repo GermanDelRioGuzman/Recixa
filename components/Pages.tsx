@@ -9,7 +9,7 @@ const Pages = () => {
   const {width} = useWindowDimensions();
 
   const backgroundImage1 = width > 600
-    ? require("../assets/.png")
+    ? require("../assets/1.png")
     : require("../assets/1small.png");
 
   const backgroundImage2 = width > 600
