@@ -1,11 +1,34 @@
 import React, {useRef,useState} from "react";
-import { Dimensions,ScrollView, View,Alert, StyleSheet, ImageBackground, StatusBar, TouchableOpacity, TextInput } from "react-native";
+import { useWindowDimensions,Dimensions,ScrollView, View,Alert, StyleSheet, ImageBackground, StatusBar, TouchableOpacity, TextInput } from "react-native";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 
 const Pages = () => {
 
-  const { width, height } = Dimensions.get("window"); // Obtén las dimensiones de la pantalla
+  const { height } = Dimensions.get("window"); // Obtén las dimensiones de la pantalla
+  const {width} = useWindowDimensions();
+
+  const backgroundImage1 = width > 600
+    ? require("../assets/1.png")
+    : require("../assets/1small.png");
+
+  const backgroundImage2 = width > 600
+    ? require("../assets/2.png")
+    : require("../assets/2small.png");
+
+  const backgroundImage3 = width > 600
+    ? require("../assets/3.png")
+    : require("../assets/3small.png");
+
+  const backgroundImage4 = width > 600
+    ? require("../assets/4.png")
+    : require("../assets/4small.png");
+
+  const backgroundImage5 = width > 600
+    ? require("../assets/5.png")
+    : require("../assets/5small.png");
+
+
 
   const scrollViewRef = useRef();
   const [currentSection, setCurrentSection] = useState(0);
@@ -38,7 +61,7 @@ const Pages = () => {
         <View style={styles.section}>
           <TouchableOpacity >
             <ImageBackground
-              source={require("../assets/1.png")}
+              source={backgroundImage1}
               style={[styles.background, {width, height}]}
               resizeMode="contain" // Ajusta la imagen para que no se distorsione
             >
@@ -50,7 +73,7 @@ const Pages = () => {
         <View style={styles.section}>
         <TouchableOpacity >
             <ImageBackground
-              source={require("../assets/2.png")}
+              source={backgroundImage2}
               style={[styles.background, {width, height}]}
               resizeMode="contain" // Ajusta la imagen para que no se distorsione
             >
@@ -62,7 +85,7 @@ const Pages = () => {
         <View style={styles.section}>
         <TouchableOpacity >
             <ImageBackground
-              source={require("../assets/3.png")}
+              source={backgroundImage3}
               style={[styles.background, {width, height}]}
               resizeMode="contain" // Ajusta la imagen para que no se distorsione
             >
@@ -74,7 +97,7 @@ const Pages = () => {
         <View style={styles.section}>
         <TouchableOpacity>
             <ImageBackground
-              source={require("../assets/4.png")}
+              source={backgroundImage4}
               style={[styles.background, {width, height}]}
               resizeMode="contain" // Ajusta la imagen para que no se distorsione
             >
@@ -87,7 +110,7 @@ const Pages = () => {
         <View>
           
           <ImageBackground
-                source={require("../assets/5.png")}
+                source={backgroundImage5}
                 style={[styles.background, {width, height}]}
                 resizeMode="contain" // Ajusta la imagen para que no se distorsione
               >
